@@ -1,0 +1,81 @@
+---
+// Bento.astro - A bento grid layout for services
+---
+
+<section
+data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+      class="py-16 px-4">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl font-normal mb-4 text-left">Historia</h2>
+      <hr class="pt-2 pb-6 border-t border-gray-200" />
+      
+      <!-- Bento Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto">
+        <!-- Service 1 - Large Item (spans 2 columns and 2 rows) -->
+        <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group h-[400px] md:h-auto">
+          <div class="absolute inset-0">
+            <img 
+              src="/placeholder.svg?height=600&width=800" 
+              alt="Architectural Design" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Gradient Overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          </div>
+          
+          <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Architectural Design</h3>
+            <p class="text-white/90 max-w-lg">
+              Our award-winning architectural design services blend innovation with sustainability. 
+              We create spaces that are not only visually stunning but also environmentally responsible 
+              and functionally efficient.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Service 2 - Medium Item -->
+        <div class="rounded-xl overflow-hidden relative group h-[300px]">
+          <div class="absolute inset-0">
+            <img 
+              src="/placeholder.svg?height=400&width=400" 
+              alt="Interior Design" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Gradient Overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          </div>
+          
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-bold text-white mb-2">Interior Design</h3>
+            <p class="text-white/90">
+              Transforming spaces into personalized sanctuaries that reflect your unique style and needs.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Service 3 - Medium Item -->
+        <div class="rounded-xl overflow-hidden relative group h-[300px]">
+          <div class="absolute inset-0">
+            <img 
+              src="/placeholder.svg?height=400&width=400" 
+              alt="Sustainable Solutions" 
+              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Gradient Overlay for text readability -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+          </div>
+          
+          <div class="absolute bottom-0 left-0 p-6 w-full">
+            <h3 class="text-xl font-bold text-white mb-2">Sustainable Solutions</h3>
+            <p class="text-white/90">
+              Eco-friendly building practices and materials that reduce environmental impact without compromising on design.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  

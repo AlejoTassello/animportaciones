@@ -1,0 +1,192 @@
+---
+// Productos.astro - Minimalist product carousel using Swiper.js
+---
+<section data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine"
+        class="py-16 px-4">
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-normal mb-4 text-left">Historia</h2>
+    <hr class="pt-2 pb-6 border-t border-gray-200" />
+
+    <!-- Swiper Container -->
+    <div class="swiper-container products-swiper py-10 relative overflow-hidden max-w-full">
+      <div class="swiper-wrapper">
+        <!-- Product 1 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Minimalist Chair" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Minimalist Chair</h3>
+              <p class="text-xl font-bold mt-2">$249</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Modern Table Lamp" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Modern Table Lamp</h3>
+              <p class="text-xl font-bold mt-2">$129</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Ceramic Vase" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Ceramic Vase</h3>
+              <p class="text-xl font-bold mt-2">$89</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Wooden Coffee Table" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Wooden Coffee Table</h3>
+              <p class="text-xl font-bold mt-2">$349</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Wall Art Print" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Wall Art Print</h3>
+              <p class="text-xl font-bold mt-2">$79</p>
+            </div>
+          </div>
+        </div>
+                <!-- Product 4 -->
+                <div class="swiper-slide">
+                  <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="aspect-square relative">
+                      <img src="/placeholder.svg?height=400&width=400" alt="Wooden Coffee Table" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium text-gray-900">Wooden Coffee Table</h3>
+                      <p class="text-xl font-bold mt-2">$349</p>
+                    </div>
+                  </div>
+                </div>
+
+                        <!-- Product 4 -->
+        <div class="swiper-slide">
+          <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+            <div class="aspect-square relative">
+              <img src="/placeholder.svg?height=400&width=400" alt="Wooden Coffee Table" class="w-full h-full object-cover" />
+            </div>
+            <div class="p-4">
+              <h3 class="font-medium text-gray-900">Wooden Coffee Table</h3>
+              <p class="text-xl font-bold mt-2">$349</p>
+            </div>
+          </div>
+        </div>
+
+                <!-- Product 4 -->
+                <div class="swiper-slide">
+                  <div class="bg-gray-50 rounded-lg overflow-hidden hover:shadow-md transition-shadow">
+                    <div class="aspect-square relative">
+                      <img src="/placeholder.svg?height=400&width=400" alt="Wooden Coffee Table" class="w-full h-full object-cover" />
+                    </div>
+                    <div class="p-4">
+                      <h3 class="font-medium text-gray-900">Wooden Coffee Table</h3>
+                      <p class="text-xl font-bold mt-2">$349</p>
+                    </div>
+                  </div>
+                </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+<!-- Swiper JS -->
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.products-swiper', {
+      slidesPerView: 1,
+      slidesPerView: 'auto',
+      spaceBetween: 20,
+      loop: true, // ahora el loop es infinito
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 30,
+        },
+        1280: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+      }
+    });
+  });
+</script>
+
+
+  <style>
+    /* Custom Swiper Styles for Minimalist Design */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #000;
+      background: white;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+      font-size: 18px;
+    }
+    
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+    }
+    
+    .swiper-pagination-bullet-active {
+      background: #000;
+    }
+    
+    /* Add some space for the pagination */
+    .products-swiper {
+      padding-bottom: 50px;
+    }
+  </style>
+  
+  

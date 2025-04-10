@@ -1,11 +1,14 @@
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<script type="module" src="/src/scripts/initAOS.js"></script>
+
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<title>Importaciones AN</title>
 	</head>
 	<body>
 		<slot />
@@ -13,10 +16,22 @@
 </html>
 
 <style>
+	@font-face {
+  font-family: 'Brown';
+  src: url('/fonts/Brown-Regular.woff2') format('woff2'),
+	   url('/fonts/Brown-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 	html,
 	body {
+		font-family: 'Brown', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
 		margin: 0;
 		width: 100%;
 		height: 100%;
+	
 	}
+
+
 </style>

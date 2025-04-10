@@ -1,0 +1,53 @@
+---
+// Header.astro
+---
+
+<header data-aos="fade-down"   id="main-header" class="fixed top-0 w-full z-50 mt-2 transition-all duration-300">
+  <div 
+    id="header-content"
+    class="max-w-7xl mx-auto flex justify-between items-center bg-white px-6 py-4 transition-all duration-300 rounded-none"
+  >
+    <div>
+      <h1 class="text-xl font-bold text-gray-900">AN Importaciones</h1>
+    </div>
+    <div class="flex items-center gap-3">
+      <a
+        href="#amenities"
+        class="px-5 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200 transition-colors"
+      >
+        Cotización
+      </a>
+      <a
+        href="#availability"
+        class="px-5 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200 transition-colors"
+      >
+        Catálogo
+      </a>
+      <a
+        href="#inquire"
+        class="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors"
+      >
+        Mayorista
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const headerContent = document.getElementById('header-content');
+
+  if (headerContent) {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 10) {
+        headerContent.classList.remove('bg-white', 'rounded-none');
+        headerContent.classList.add('bg-white/80', 'backdrop-blur-md', 'rounded-lg');
+      } else {
+        headerContent.classList.remove('bg-white/80', 'backdrop-blur-md', 'rounded-lg');
+        headerContent.classList.add('bg-white', 'rounded-none');
+      }
+    });
+  }
+</script>
+
+  
+  
