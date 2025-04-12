@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import Historia from '../components/Historia.astro';
 import Productos from '../components/Productos.astro';
+import SectionContainer from '../components/SectionContainer.astro';
 import Testimonios from '../components/Testimonios.astro';
 import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
@@ -16,11 +17,14 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+    
 <Header/>
 <Entrada/>
 <Productos/>
 <Bento/>
-<Cotizacion/>
+<SectionContainer id="Cotizacion">
+    <Cotizacion/>
+</SectionContainer>
 <Historia/>
 <Testimonios/>
 <Contacto/>

@@ -1,81 +1,50 @@
----
-// Bento.astro - A bento grid layout for services
----
-
 <section
-data-aos="fade-up"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine"
-      class="py-16 px-4">
-    <div class="max-w-7xl mx-auto">
-      <h2 class="text-2xl font-normal mb-4 text-left">Historia</h2>
-      <hr class="pt-2 pb-6 border-t border-gray-200" />
-      
-      <!-- Bento Grid Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto">
-        <!-- Service 1 - Large Item (spans 2 columns and 2 rows) -->
-        <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group h-[400px] md:h-auto">
-          <div class="absolute inset-0">
-            <img 
-              src="/placeholder.svg?height=600&width=800" 
-              alt="Architectural Design" 
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <!-- Gradient Overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-          </div>
-          
-          <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
-            <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">Architectural Design</h3>
-            <p class="text-white/90 max-w-lg">
-              Our award-winning architectural design services blend innovation with sustainability. 
-              We create spaces that are not only visually stunning but also environmentally responsible 
-              and functionally efficient.
-            </p>
-          </div>
+  data-aos="fade-up"
+  data-aos-offset="200"
+  data-aos-easing="ease-in-sine"
+  class="w-full py-16 px-4 bg-white " 
+>
+  <div class="max-w-7xl mx-auto">
+    <h2 class="text-2xl font-normal mb-4 text-left">¿Por qué elegirnos?</h2>
+    <hr class="pt-2 pb-6 border-t border-gray-200" />
+
+    <div class="grid md:grid-cols-3 gap-6 items-stretch">
+      <!-- Paso a paso grande -->
+      <div class="md:col-span-2 bg-gray-50 rounded-lg p-6 shadow flex flex-col justify-start h-full">
+        <h3 class="text-lg font-semibold mb-2">¿Cómo funciona AN Importaciones?</h3>
+        <p class="text-gray-700 mb-3 pb-4">Te ayudamos a importar fácil, sin complicaciones ni mínimos exigentes.</p>
+        <ul class="text-gray-800 space-y-2 leading-relaxed">
+          <li><strong>1. Nos decís qué querés importar:</strong> Podés elegir del catálogo o pedir algo puntual.</li>
+          <li><strong>2. Cotizamos con proveedores confiables:</strong> Negociamos directo con fábricas.</li>
+          <li><strong>3. Agrupamos tu pedido con otros:</strong> Reducís costos compartiendo envío.</li>
+          <li><strong>4. Gestionamos todo el envío y aduana:</strong> Nos encargamos de toda la logística.</li>
+          <li><strong>5. Recibís tu pedido sin complicaciones:</strong> Te entregamos donde nos indiques.</li>
+        </ul>
+      </div>
+
+      <div class="flex flex-col justify-between h-full gap-6">
+        <!-- Beneficios -->
+        <div class="bg-gray-50 rounded-lg px-6 pt-4 pb-4 shadow flex-1">
+          <h3 class="text-lg font-semibold mb-2">¿Por qué importar con nosotros?</h3>
+          <ul class="text-gray-800 space-y-2 leading-relaxed">
+            <li>• Ahorro de tiempo y dinero</li>
+            <li>• Proveedores seleccionados</li>
+            <li>• Envíos a todo el país</li>
+            <li>• Atención personalizada</li>
+            <li>• Ganancias mayoristas de hasta 300%</li>
+          </ul>
         </div>
-        
-        <!-- Service 2 - Medium Item -->
-        <div class="rounded-xl overflow-hidden relative group h-[300px]">
-          <div class="absolute inset-0">
-            <img 
-              src="/placeholder.svg?height=400&width=400" 
-              alt="Interior Design" 
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <!-- Gradient Overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-          </div>
-          
-          <div class="absolute bottom-0 left-0 p-6 w-full">
-            <h3 class="text-xl font-bold text-white mb-2">Interior Design</h3>
-            <p class="text-white/90">
-              Transforming spaces into personalized sanctuaries that reflect your unique style and needs.
-            </p>
-          </div>
-        </div>
-        
-        <!-- Service 3 - Medium Item -->
-        <div class="rounded-xl overflow-hidden relative group h-[300px]">
-          <div class="absolute inset-0">
-            <img 
-              src="/placeholder.svg?height=400&width=400" 
-              alt="Sustainable Solutions" 
-              class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-            />
-            <!-- Gradient Overlay for text readability -->
-            <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-          </div>
-          
-          <div class="absolute bottom-0 left-0 p-6 w-full">
-            <h3 class="text-xl font-bold text-white mb-2">Sustainable Solutions</h3>
-            <p class="text-white/90">
-              Eco-friendly building practices and materials that reduce environmental impact without compromising on design.
-            </p>
-          </div>
+
+        <!-- Frase simple -->
+        <div class="bg-gray-50 rounded-lg p-4 shadow text-center italic">
+          "Simplificamos tu importación para que vos solo te enfoques en vender".
         </div>
       </div>
     </div>
-  </section>
-  
-  
+  </div>
+</section>
+
+
+
+
+

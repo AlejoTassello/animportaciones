@@ -2,17 +2,20 @@
 // Header.astro
 ---
 
-<header data-aos="fade-down"   id="main-header" class="fixed top-0 w-full z-50 mt-2 transition-all duration-300">
+<header data-aos="fade-down" id="main-header" class="fixed top-0 w-full z-50 mt-2 transition-all duration-300">
   <div 
     id="header-content"
-    class="max-w-7xl mx-auto flex justify-between items-center bg-white px-6 py-4 transition-all duration-300 rounded-none"
+    class="max-w-7xl mx-auto bg-white px-6 py-4 transition-all duration-300 rounded-none flex flex-col md:flex-row md:justify-between md:items-center gap-4"
   >
-    <div>
+    <!-- Título -->
+    <div class="text-center md:text-left">
       <h1 class="text-xl font-bold text-gray-900">AN Importaciones</h1>
     </div>
-    <div class="flex items-center gap-3">
+
+    <!-- Botones de navegación -->
+    <div class="flex flex-wrap justify-center md:justify-end items-center gap-3">
       <a
-        href="#amenities"
+        href="#Cotizacion"
         class="px-5 py-2 rounded-full bg-gray-100 text-gray-800 text-sm font-medium hover:bg-gray-200 transition-colors"
       >
         Cotización
@@ -24,7 +27,7 @@
         Catálogo
       </a>
       <a
-        href="#inquire"
+        href="https://animportacion.store/"
         class="px-5 py-2 rounded-full bg-black text-white text-sm font-medium hover:bg-gray-800 transition-colors"
       >
         Mayorista
@@ -32,6 +35,7 @@
     </div>
   </div>
 </header>
+
 
 <script>
   const headerContent = document.getElementById('header-content');
