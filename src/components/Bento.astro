@@ -1,3 +1,7 @@
+---
+// Bento.astro - Fusión final con imagen y overlay también en el tercer bloque
+---
+
 <section
   data-aos="fade-up"
   data-aos-offset="200"
@@ -7,42 +11,77 @@
   <div class="max-w-7xl mx-auto">
     <h2 class="text-2xl font-normal mb-4 text-left">¿Por qué elegirnos?</h2>
     <hr class="pt-2 pb-6 border-t border-gray-200" />
-
-    <div class="grid md:grid-cols-3 gap-6 items-stretch">
-      <!-- Paso a paso grande -->
-      <div class="md:col-span-2 bg-gray-50 rounded-lg p-6 shadow flex flex-col justify-start h-full">
-        <h3 class="text-lg font-semibold mb-2">¿Cómo funciona AN Importaciones?</h3>
-        <p class="text-gray-700 mb-3 pb-4">Te ayudamos a importar fácil, sin complicaciones ni mínimos exigentes.</p>
-        <ul class="text-gray-800 space-y-2 leading-relaxed">
-          <li><strong>1. Nos decís qué querés importar:</strong> Podés elegir del catálogo o pedir algo puntual.</li>
-          <li><strong>2. Cotizamos con proveedores confiables:</strong> Negociamos directo con fábricas.</li>
-          <li><strong>3. Agrupamos tu pedido con otros:</strong> Reducís costos compartiendo envío.</li>
-          <li><strong>4. Gestionamos todo el envío y aduana:</strong> Nos encargamos de toda la logística.</li>
-          <li><strong>5. Recibís tu pedido sin complicaciones:</strong> Te entregamos donde nos indiques.</li>
-        </ul>
-      </div>
-
-      <div class="flex flex-col justify-between h-full gap-6">
-        <!-- Beneficios -->
-        <div class="bg-gray-50 rounded-lg px-6 pt-4 pb-4 shadow flex-1">
-          <h3 class="text-lg font-semibold mb-2">¿Por qué importar con nosotros?</h3>
-          <ul class="text-gray-800 space-y-2 leading-relaxed">
-            <li>• Ahorro de tiempo y dinero</li>
-            <li>• Proveedores seleccionados</li>
-            <li>• Envíos a todo el país</li>
-            <li>• Atención personalizada</li>
-            <li>• Ganancias mayoristas de hasta 300%</li>
-          </ul>
+    <!-- Bento Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto">
+      <!-- Bloque grande: ¿Cómo funciona AN Importaciones? -->
+      <div class="md:col-span-2 md:row-span-2 rounded-xl overflow-hidden relative group h-[400px] md:h-auto">
+        <div class="absolute inset-0">
+          <img 
+            src="/contrato.webp" 
+            alt="Cómo funciona AN Importaciones" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale"
+          />
+          <!-- Gradiente para legibilidad -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         </div>
 
-        <!-- Frase simple -->
-        <div class="bg-gray-50 rounded-lg p-4 shadow text-center italic">
-          "Simplificamos tu importación para que vos solo te enfoques en vender".
+        <div class="absolute bottom-0 left-0 p-6 md:p-8 w-full">
+          <h3 class="text-2xl md:text-3xl font-bold text-white mb-3">¿Cómo funciona AN Importaciones?</h3>
+          <p class="text-white/90 max-w-2xl space-y-1">
+            <span class="block"><strong>1. Nos decís qué querés importar:</strong> Podés elegir del catálogo o pedir algo puntual.</span>
+            <span class="block"><strong>2. Cotizamos con proveedores confiables:</strong> Negociamos directo con fábricas.</span>
+            <span class="block"><strong>3. Agrupamos tu pedido con otros:</strong> Reducís costos compartiendo envío.</span>
+            <span class="block"><strong>4. Gestionamos todo el envío y aduana:</strong> Nos encargamos de toda la logística.</span>
+            <span class="block"><strong>5. Recibís tu pedido sin complicaciones:</strong> Te entregamos donde nos indiques.</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Bloque medio: ¿Por qué importar con nosotros? -->
+      <div class="rounded-xl overflow-hidden relative group h-[300px]">
+        <div class="absolute inset-0">
+          <img 
+            src="/manosestrechadas.webp" 
+            alt="Beneficios AN Importaciones" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 p-6 w-full">
+          <h3 class="text-xl font-bold text-white mb-2">¿Por qué importar con nosotros?</h3>
+          <p class="text-white/90">
+            • Ahorro de tiempo y dinero<br />
+            • Proveedores seleccionados<br />
+            • Envíos a todo el país<br />
+            • Atención personalizada<br />
+            • Ganancias mayoristas de hasta 300%
+          </p>
+        </div>
+      </div>
+
+      <!-- Bloque pequeño: Frase con imagen y overlay -->
+      <div class="rounded-xl overflow-hidden relative group h-[300px]">
+        <div class="absolute inset-0">
+          <img 
+            src="/entregas.webp" 
+            alt="Frase de cierre" 
+            class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 grayscale"
+          />
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+        </div>
+
+        <div class="absolute bottom-0 left-0 p-6 w-full text-center">
+          <p class="text-lg font-medium text-white italic">
+            "Simplificamos tu importación para que vos solo te enfoques en vender".
+          </p>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
 
 
 
